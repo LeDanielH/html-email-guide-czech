@@ -176,6 +176,7 @@
 ----
 
 ### TYPOGRAFIE
++ Používejte jen web safe fonts.
 + Aplikujte text styling přímo na text elementy jako "span", "em", "strong", "a".
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní. 
