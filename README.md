@@ -31,7 +31,7 @@
 ### STYLING - OBECNĚ
 + Nedávat styling do "head" (kromě specifických stylů pro email klienty, viz. základní kostra emailu na konci tohoto dokumentu).
 + Link k css stylům v "head" nepříchází v úvahu.
-+ Všechny styly aplikujte inline a až po vyčerpání možností stylingu přes element atributy. V HTML 5 se git ads většinou těchto attributů nesetkáte ale jsou podle mé zkušenosti jedinou cestou, jak napsat html email kompatibilní se všemy emailovými klienty.
++ Všechny styly aplikujte inline a až po vyčerpání možností stylingu přes element atributy. V HTML 5 se s většinou těchto attributů nesetkáte ale jsou podle mé zkušenosti jedinou cestou, jak napsat html email kompatibilní se všemy emailovými klienty.
 + Inline style attribute používejte jen když je to opravdu nutné - například pro styling textu nebo pro změnu spacingu v "td" elementu.
 + Dle mých zkušeností -> nepoužívat následující css properties: "display", "position", "margin".
  
@@ -182,6 +182,11 @@
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní. 
 + Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje.
+
+----
+
+### LINKY
++ do "a" tagu obalujte jen text a obrazky, nikdy neobalovat a tagem "table", "tr" a "td" - linky přestanou fungovat.
 
 ----
 
