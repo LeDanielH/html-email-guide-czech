@@ -63,12 +63,12 @@
 ----
 
 ### BARVA TABULKY
++ nepoužívejte zkratky jako #fff, ale #ffffff na všechny barvy, v outlooku mi to přes zkratku barvu ignoruje.
 + "background-color" aplikujte jen na "table" element přes "style" attribute a na "td" element "vždy"(pro jistotu) přes "bgcolor" attribute.
-+ "bgcolor" attribute musí mít 7 znaků #ffffff, nepoužívejte zkratky jako #fff. V outlooku mi to nefungovalo.
 
 ```html
 
-    <table style="background-color: #fff;">
+    <table style="background-color: #ffffff;">
         <td bgcolor= "#dddddd"></td>
     </table>
 ``` 
@@ -271,3 +271,8 @@
     </body>
     </html>
 ```
+
+----
+
+### Zajímavé odkazy:
+http://templates.mailchimp.com/development/
