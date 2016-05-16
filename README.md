@@ -165,8 +165,8 @@
 ----
 
 ### OBRÁZKY
-+ Pokud je to jen možné, mějte obrázky v přesné požadované velikosti. Outlook nejspíš ignoruje jejich šířku i výšku definovanou přes "height", "width" attributy i přes "style" attribute.
-+ Pokud obrázek nemá požadovanou šířku, pro jistotu definujte jeho šířku přes "img" attribute "width".
++ Pokud je to jen možné, mějte obrázky v přesné požadované velikosti.
++ Pokud obrázek nemá požadovanou šířku, definujte jeho šířku přes "img" attribute "width". Outlook mi to bral.
 
 ```html
     
