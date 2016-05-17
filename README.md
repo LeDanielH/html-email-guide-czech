@@ -64,7 +64,7 @@
 ----
 
 ### VÝŠKA TR ELEMENTU
-+ "tr" je tak vysoký, jako výška obsahu uvnitř "td" elementu + cellpadding definovaný přes table. 
++ "tr" je tak vysoký, jako výška obsahu uvnitř "td" elementu + cellpadding definovaný přes "table". 
 + Například levý "td" s obrázkem roztáhne pravý "td" s textem a odsune následující "tr" o výšku obrázku dále.
 
 ----
