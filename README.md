@@ -199,7 +199,7 @@
 ```html
     
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="cs">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
