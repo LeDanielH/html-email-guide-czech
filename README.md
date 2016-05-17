@@ -144,7 +144,7 @@
                 <tr>
                 
                     <!-- ZDE DEFINUJETE ŠÍŘKU A BARVU LINKY -->
-                    <td height="3" style="font-size:1px; line-height:1px; max-height: 2px;" bgcolor="#333333">&nbsp;</td>
+                    <td height="3" style="font-size:1px; line-height:1px;" bgcolor="#333333">&nbsp;</td>
                 </tr>
             </table>
         </td>
