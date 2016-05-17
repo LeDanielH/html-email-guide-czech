@@ -7,6 +7,8 @@
 
 ### ZÁKLAD - TABULKY A NIC JINÉHO!
 + Nepoužívat "div" element pro wrapping, vytvořte další "table" a vždy uvnitř "td" elementu.
++ "tr" je tak vysoký, jako výška obsahu uvnitř "td" elementu + cellpadding definovaný přes table. 
++ Například levý "td" s obrázkem roztáhne pravý "td" s textem a odsune následující "tr" o to dále.
 
 ```html
 
@@ -185,7 +187,7 @@
 + Aplikujte text styling přímo na text elementy jako "span", "em", "strong", "a".
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní. 
-+ Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje.
++ Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje. Tak s tím počítejte.
 
 ----
 
