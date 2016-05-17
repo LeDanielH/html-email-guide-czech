@@ -22,7 +22,8 @@
 ----
 
 ### HTML ELEMENTY, JAKÉ POUŽÍVAT A JAKÝM SE VYHNOUT
-+ Nepoužívat block level elementy pro obsah tabulek: "div", "h1, h2...", "p", text wrapujte do "span". Nelze na ně aplikovat positioning přes "td" atributy(align, valign).
++ Nepoužívat block level elementy pro obsah tabulek: "div", "h1, h2...", "p". Nelze na ně aplikovat positioning přes "td" atributy(align, valign).
++ Text wrapujte do "span", není block level elementem tudiž na něj lze aplikovat positioning přes "td" atributy(align, valign).
 + "img" bývá wrapnut do "a" tagu, proto s ním lze manipulovat přes "td" attributy(align, valign). Vysvětleno níže v "USPOŘÁDÁNÍ ELEMENTŮ UVNITŘ TABULKY".
 + Maximálně využívat html elementů pro styling textu jako "strong", "small" a "em".
 
@@ -31,7 +32,7 @@
 ### STYLING - OBECNĚ
 + Nedávat styling do "head" (kromě specifických stylů pro email klienty, viz. základní kostra emailu na konci tohoto dokumentu).
 + Link k css stylům v "head" nepříchází v úvahu.
-+ Všechny styly aplikujte inline a až po vyčerpání možností stylingu přes element atributy. V HTML 5 se s většinou těchto attributů nesetkáte ale jsou podle mé zkušenosti jedinou cestou, jak napsat html email kompatibilní se všemy emailovými klienty.
++ Všechny styly aplikujte inline a až po vyčerpání možností stylingu přes html element atributy. V HTML 5 se již s většinou těchto attributů nesetkáte (status "deprecated"), podle mé zkušenosti jsou však jedinou cestou, jak napsat html email kompatibilní se všemy emailovými klienty.
 + Inline style attribute používejte jen když je to opravdu nutné - například pro styling textu nebo pro změnu spacingu v "td" elementu.
 + Dle mých zkušeností -> nepoužívat následující css properties: "display", "position", "margin".
  
@@ -102,9 +103,9 @@
 ### SPACING
 + V žádném případě nepoužívejte style="margin: ;". Na cokoli! Outlook ho ignoruje. Kromě margin definovaných v highlevel elementech u základní kostry emailu na konci tohoto dokumentu. 
 + Aplikujte základní spacing přes "table"(cellpadding) attribute.
-+ Pokud chcete zmenšit / zvětšit spacing unvitř "table", definovaný přes "cellpadding" attribute, aplikujte style "padding" na "td" element.
++ Pokud chcete zmenšit / zvětšit spacing unvitř "table", definovaný přes "cellpadding" attribute, aplikujte inline style "padding" na "td" element.
 + Neaplikujte spacing na žadný jiný element než "table"(cellpadding) a td(style="padding: ;")
-    - tzn. žádný padding na "span", "a", "img", "em", "strong", "small", jen "table" a "td"!  
+    - tzn. žádný padding na "span", "a", "img", "em", "strong", "small", jen "table" a "td"!
     
 ```html
    
@@ -150,7 +151,7 @@
 ----
 
 ### USPOŘÁDÁNÍ ELEMENTŮ UVNITŘ TABULKY
-+ Abyste mohli manipulovat s elementy uvnitř "td" elementu přes "td" attributy(align - horizontal, valign - vertical), elementy nesmí být block level ("p", "h"), použijte "span" místo nich.
++ Abyste mohli manipulovat s elementy uvnitř "td" elementu přes "td" attributy(align - horizontal, valign - vertical), elementy nesmí být block level ("p", "h", "div"), použijte "span" místo nich.
 
 ```html
    
@@ -177,7 +178,7 @@
 ----
 
 ### TYPOGRAFIE
-+ Používejte jen web safe fonts.
++ Používejte jen [web safe fonts](http://web.mit.edu/jmorzins/www/fonts.html).
 + Aplikujte text styling přímo na text elementy jako "span", "em", "strong", "a".
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní. 
