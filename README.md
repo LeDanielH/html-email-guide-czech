@@ -23,7 +23,7 @@
 
 ### HTML ELEMENTY, JAKÉ POUŽÍVAT A JAKÝM SE VYHNOUT
 + Nepoužívat block level elementy pro obsah tabulek: "div", "h1, h2...", "p". Nelze na ně aplikovat positioning přes "td" atributy(align, valign).
-+ Text wrapujte do "span", není block level elementem tudiž na něj lze aplikovat positioning přes "td" atributy(align, valign).
++ Text wrapujte do "span", není block level elementem, lze tedy na něj aplikovat positioning přes "td" atributy(align, valign).
 + "img" bývá wrapnut do "a" tagu, proto s ním lze manipulovat přes "td" attributy(align, valign). Vysvětleno níže v "USPOŘÁDÁNÍ ELEMENTŮ UVNITŘ TABULKY".
 + Maximálně využívat html elementů pro styling textu jako "strong", "small" a "em".
 
