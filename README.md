@@ -132,6 +132,9 @@
 ----
 
 ### DESIGN HORIZONTÁLNÍ LINKY / ODDĚLOVACÍHO PANELU
++ Tato "table row" Vám pomůže se ujistit, že pod Vaším sloupečkem bude vždy místo. 
++ Díky tomu nemusíte přidávat padding-bottom na poslední "td" element sloupečku a mazat z předchozího "td" elemetnu sloupečku pokaždé, když přidáte nový element.
++ => Čím méně stylingu budete ke style attributu přidávat, tím pravděpodobněji bude email kompatibilní s různými druhy klientů.
 
 ```html
 
