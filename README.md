@@ -123,9 +123,6 @@
             <td style="padding-top: 5px">
                 <span>Tento text je o 5px výše než je definovaný cellpadding, v tomto případě je jen 5px. "tr" elementy pod ním se také posunou o 5px výše.</span>
             </td>
-            <td>
-                <span>Tento text je 20px vedle prvního "span" tagu. 10px + 10px. A 10px od horního okraje definovaného pres "table"(cellpadding).</span>
-            </td>
         </tr>
         <tr>
             <td>
