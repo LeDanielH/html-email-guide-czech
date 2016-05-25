@@ -25,7 +25,7 @@
 + Nepoužívat block level elementy pro obsah tabulek: "div", "h1, h2...", "p". Nelze na ně aplikovat positioning přes "td" atributy(align, valign).
 + Text wrapujte do "span", není block level elementem, lze tedy na něj aplikovat positioning přes "td" atributy(align, valign).
 + "img" bývá wrapnut do "a" tagu, proto s ním lze manipulovat přes "td" attributy(align, valign). Vysvětleno níže v "USPOŘÁDÁNÍ ELEMENTŮ UVNITŘ TABULKY".
-+ Maximálně využívat html elementů pro styling textu jako "strong", "small" a "em".
++ HTML elementy pro styling textu jako "small" a "em" nejsou kompatibilni s emailem od seznam.cz. Pouzivejte element "i" pro italic, "strong" pro bold a teprv pote az "span" + css styling.
 
 ----
 
@@ -185,7 +185,7 @@
 
 ### TYPOGRAFIE
 + Používejte jen [web safe fonts](http://web.mit.edu/jmorzins/www/fonts.html).
-+ Aplikujte text styling přímo na text elementy jako "span", "em", "strong", "a".
++ Aplikujte text styling přímo na text elementy jako "span", "a".
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní. 
 + Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje. Tak s tím počítejte.
