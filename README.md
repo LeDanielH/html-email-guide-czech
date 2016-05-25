@@ -45,16 +45,13 @@
 
                 <!-- HEADING -->
                 <span style="font-family: Arial, sans-serif; font-size: 20px;">
-                    <em>THIS IS ITALIC <strong> BOLD TEXT</strong></em>    
+                    <i>THIS IS ITALIC <strong> BOLD TEXT</strong></i>    
                 </span>
             </td>
             <td>
                 <a href="#">
                     <img src="#" alt="image">
                 </a>
-            </td>
-            <td>
-                <small>This is 12px text</small>
             </td>
         </tr>
     </table>
@@ -111,7 +108,7 @@
 + Aplikujte základní spacing přes "table"(cellpadding) attribute.
 + Pokud chcete zmenšit / zvětšit spacing unvitř "table", definovaný přes "cellpadding" attribute, aplikujte inline style "padding" na "td" element.
 + Neaplikujte spacing na žadný jiný element než "table"(cellpadding) a td(style="padding: ;")
-    - tzn. žádný padding na "span", "a", "img", "em", "strong", "small", jen "table" a "td"!
+    - tzn. žádný padding na "span", "a", "img", "i", "strong", jen "table" a "td"!
     
 ```html
    
@@ -173,7 +170,7 @@
 
 ### OBRÁZKY
 + Pokud je to jen možné, mějte obrázky v přesné požadované velikosti.
-+ Pokud obrázek nemá požadovanou šířku, definujte jeho šířku přes "img" attribute "width". Outlook mi to bral.
++ Pokud obrázek nemá požadovanou šířku, definujte jeho šířku přes "img" attribute "width".
 
 ```html
     
