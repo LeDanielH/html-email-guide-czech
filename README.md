@@ -1,6 +1,6 @@
-# JAK PSÁT HTML EMAIL
+# JAK PSÁT STATICKÝ HTML EMAIL
 
-+ Zapomeňte slovo semantic a vše co víte o tradičním web designu. 
++ Zapomeňte slovo semantic a vše co víte o tradičním web designu.
 + Cílem tohoto tutoriálu není vysvětlit specifika jednotlivých klientů, ale ukázat, co můžete použít ve všech.
 
 ----
@@ -35,9 +35,9 @@
 + Všechny styly aplikujte inline a až po vyčerpání možností stylingu přes html element atributy. V HTML 5 se již s většinou těchto attributů nesetkáte (status "deprecated"), podle mé zkušenosti jsou však jedinou cestou, jak napsat html email kompatibilní se všemy emailovými klienty.
 + Inline style attribute používejte jen když je to opravdu nutné - například pro styling textu nebo pro změnu spacingu v "td" elementu.
 + Dle mých zkušeností -> nepoužívat následující css properties: "display", "position", "margin".
- 
+
 ```html
-       
+
     <!-- TYTO ATTRIBUTY I STYLE ATTRIBUTE BUDE MÍT KAŽDÝ "table" ELEMENT VE VAŠEM EMAIL TEMPLATE -->
     <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
         <tr>
@@ -45,7 +45,7 @@
 
                 <!-- HEADING -->
                 <span style="font-family: Arial, sans-serif; font-size: 20px;">
-                    <i>THIS IS ITALIC <strong> BOLD TEXT</strong></i>    
+                    <i>THIS IS ITALIC <strong> BOLD TEXT</strong></i>
                 </span>
             </td>
             <td>
@@ -61,7 +61,7 @@
 ----
 
 ### VÝŠKA TR ELEMENTU
-+ "tr" je tak vysoký, jako výška obsahu uvnitř "td" elementu + cellpadding definovaný přes "table". 
++ "tr" je tak vysoký, jako výška obsahu uvnitř "td" elementu + cellpadding definovaný přes "table".
 + Například levý "td" s obrázkem roztáhne pravý "td" s textem a odsune následující "tr" o výšku obrázku dále.
 
 ----
@@ -75,22 +75,22 @@
     <table style="background-color: #ffffff;">
         <td bgcolor= "#dddddd"></td>
     </table>
-``` 
+```
 
 ----
 
-### ROZMĚRY 
+### ROZMĚRY
 + Doporučená šířka pro HTML email je 600px - současný trend. Maximum je 800px.
 + Používejte raději width="800" attribute než style="width: 800px";.
 + Pokud definujete výšku elementu přes style attribute, místo "height" používejte "max-height", gmail konvertuje "height" do "min-height" a obrázky tím roztáhne do výšky.
 
 ```html
-   
+
     <table width="800">
         <tr>
             <!-- COLUMN 1 -->
             <td width="500"></td>
-            
+
             <!-- COLUMN 2 -->
             <td width="300">
                 <a href="#">
@@ -104,17 +104,17 @@
 ----
 
 ### SPACING
-+ V žádném případě nepoužívejte style="margin: ;". Na cokoli! Outlook ho ignoruje. Kromě margin definovaných v highlevel elementech u základní kostry emailu na konci tohoto dokumentu. 
++ V žádném případě nepoužívejte style="margin: ;". Na cokoli! Outlook ho ignoruje. Kromě margin definovaných v highlevel elementech u základní kostry emailu na konci tohoto dokumentu.
 + Aplikujte základní spacing přes "table"(cellpadding) attribute.
 + Pokud chcete zmenšit / zvětšit spacing unvitř "table", definovaný přes "cellpadding" attribute, aplikujte inline style "padding" na "td" element.
 + Neaplikujte spacing na žadný jiný element než "table"(cellpadding) a td(style="padding: ;")
     - tzn. žádný padding na "span", "a", "img", "i", "strong", jen "table" a "td"!
-    
+
 ```html
-   
+
     <!-- 10px na všech stranách uvnitř každého <td> elementu -->
     <table cellpadding="10">
-        
+
         <tr>
             <!-- zmenší spacing top na 5px, ostaní zůstávají na 10px. -->
             <td style="padding-top: 5px">
@@ -132,7 +132,7 @@
 ----
 
 ### DESIGN HORIZONTÁLNÍ LINKY / ODDĚLOVACÍHO PANELU
-+ Tato "table row" Vám pomůže se ujistit, že pod Vaším sloupečkem bude vždy místo. 
++ Tato "table row" Vám pomůže se ujistit, že pod Vaším sloupečkem bude vždy místo.
 + Díky tomu nemusíte přidávat padding-bottom na poslední "td" element sloupečku a mazat z předchozího "td" elemetnu sloupečku pokaždé, když přidáte nový element.
 + => Čím méně stylingu budete ke style attributu přidávat, tím pravděpodobněji bude email kompatibilní s různými druhy klientů.
 
@@ -142,7 +142,7 @@
         <td align="center" valign="top">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                 <tr>
-                
+
                     <!-- ZDE DEFINUJETE ŠÍŘKU A BARVU LINKY -->
                     <td height="3" style="font-size:1px; line-height:1px;" bgcolor="#333333">&nbsp;</td>
                 </tr>
@@ -157,7 +157,7 @@
 + Abyste mohli manipulovat s elementy uvnitř "td" elementu přes "td" attributy(align - horizontal, valign - vertical), elementy nesmí být block level ("p", "h", "div"), použijte "span" místo nich.
 
 ```html
-   
+
     <!-- USPOŘÁDÁ TEXT UPROSTŘED A ON TOP OF THE TD ELEMENT -->
     <td align="center" valign="top">
         <span>Some text</span>
@@ -173,7 +173,7 @@
 + Pokud obrázek nemá požadovanou šířku, definujte jeho šířku přes "img" attribute "width".
 
 ```html
-    
+
     <!-- TAKTO BY MĚL VYPADAT STYLING KAŽDÉHO <img> ELEMENTU PODLE MAILCHIMPU -->
     <img width="240" style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;" src="http://lorempicsum.com/nemo/240/140/6" alt="article one image">
 ```
@@ -184,7 +184,7 @@
 + Používejte jen [web safe fonts](http://web.mit.edu/jmorzins/www/fonts.html).
 + Aplikujte text styling přímo na text elementy jako "span", "a".
 + Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
-+ Outlook ignoruje line-height a nastavuje vlastní. 
++ Outlook ignoruje line-height a nastavuje vlastní.
 + Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje. Tak s tím počítejte.
 
 ----
@@ -197,7 +197,7 @@
 ## Základní HTML struktura inspirovaná MailChimp templatem:
 
 ```html
-    
+
     <!DOCTYPE html>
     <html lang="cs">
     <head>
@@ -207,12 +207,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Euro Newsletter</title>
         <style type="text/css">
-            
+
             /* FORCE OUTLOOK TO PROVIDE A "VIEW IN BROWSER" BUTTON. */
             #outlook a {
                 padding: 0;
             }
-            
+
             /* FORCE HOTMAIL TO DISPLAY EMAILS AT FULL WIDTH */
             .ReadMsgBody {
                 width: 100%;
@@ -221,7 +221,7 @@
             .ExternalClass {
                 width: 100%;
             }
-            
+
             /* YAHOO OVERRIDE */
             a .yshortcuts {
                 color: #336699;
@@ -235,13 +235,13 @@
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="margin:0; padding:0; width: 100% !important;">
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="height:100% !important; margin:0; padding:0; width:100% !important; border-collapse: collapse;">
             <tr>
-               
+
                 <!-- USE align="center" ATTRIBUTE TO CENTER THE EMAIL, DON'T USE style="margin: 0 auto;" -->
                 <td align="center" valign="top">
-                   
+
                     <!-- THIS IS WHERE YOU SET EMAIL WIDTH -->
                     <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
-                       
+
                         <!-- EMAIL HEADER ROW -->
                         <tr>
                             <td align="center" valign="top">
@@ -250,7 +250,7 @@
                                 </table>
                             </td>
                         </tr>
-                        
+
                         <!-- EMAIL CONTENT ROW -->
                         <tr>
                             <td align="center" valign="top">
@@ -259,7 +259,7 @@
                                 </table>
                             </td>
                         </tr>
-                        
+
                         <!-- EMAIL FOOTER ROW -->
                         <tr>
                             <td align="center" valign="top">
