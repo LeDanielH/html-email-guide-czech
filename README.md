@@ -183,7 +183,7 @@
 ### TYPOGRAFIE
 + Používejte jen [web safe fonts](http://web.mit.edu/jmorzins/www/fonts.html).
 + Aplikujte text styling přímo na text elementy jako "span", "a".
-+ Pokud aplikujete text styling na "table" nebo "td" element, Outlook bude styly ignorovat.
++ Pokud aplikujete text styling na "table" nebo "td" element, některé klienty je mohou ignorovat.
 + Outlook ignoruje line-height a nastavuje vlastní.
 + Při větší line-height než je font-size se začne tvořit malý margin on top, kterého se nelze zbavit - například negativním margin, který v outlooku nefunguje. Tak s tím počítejte.
 
