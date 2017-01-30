@@ -10,13 +10,13 @@
 
 ```html
 
-    <table>
-        <tr>
-            <td>
-                <table></table>
-            </td>
-        </tr>
-    </table>
+	<table>
+		<tr>
+			<td>
+				<table></table>
+			</td>
+		</tr>
+	</table>
 ```
 
 ----
@@ -38,23 +38,23 @@
 
 ```html
 
-    <!-- TYTO ATTRIBUTY I STYLE ATTRIBUTE BUDE MÍT KAŽDÝ "table" ELEMENT VE VAŠEM EMAIL TEMPLATE -->
-    <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
-        <tr>
-            <td align="center" valign="top">
+	<!-- TYTO ATTRIBUTY I STYLE ATTRIBUTE BUDE MÍT KAŽDÝ "table" ELEMENT VE VAŠEM EMAIL TEMPLATE -->
+	<table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+		<tr>
+			<td align="center" valign="top">
 
-                <!-- HEADING -->
-                <span style="font-family: Arial, sans-serif; font-size: 20px;">
-                    <i>THIS IS ITALIC <strong> BOLD TEXT</strong></i>
-                </span>
-            </td>
-            <td>
-                <a href="#">
-                    <img src="#" alt="image">
-                </a>
-            </td>
-        </tr>
-    </table>
+				<!-- HEADING -->
+				<span style="font-family: Arial, sans-serif; font-size: 20px;">
+					<i>THIS IS ITALIC <strong> BOLD TEXT</strong></i>
+				</span>
+			</td>
+			<td>
+				<a href="#">
+					<img src="#" alt="image">
+				</a>
+			</td>
+		</tr>
+	</table>
 
 ```
 
@@ -72,9 +72,9 @@
 
 ```html
 
-    <table style="background-color: #ffffff;">
-        <td bgcolor= "#dddddd"></td>
-    </table>
+	<table style="background-color: #ffffff;">
+		<td bgcolor= "#dddddd"></td>
+	</table>
 ```
 
 ----
@@ -86,19 +86,19 @@
 
 ```html
 
-    <table width="800">
-        <tr>
-            <!-- COLUMN 1 -->
-            <td width="500"></td>
+	<table width="800">
+		<tr>
+			<!-- COLUMN 1 -->
+			<td width="500"></td>
 
-            <!-- COLUMN 2 -->
-            <td width="300">
-                <a href="#">
-                    <img width="230" src="#" alt="image">
-                </a>
-            </td>
-        </tr>
-    </table>
+			<!-- COLUMN 2 -->
+			<td width="300">
+				<a href="#">
+					<img width="230" src="#" alt="image">
+				</a>
+			</td>
+		</tr>
+	</table>
 ```
 
 ----
@@ -108,25 +108,25 @@
 + Aplikujte základní spacing přes "table"(cellpadding) attribute.
 + Pokud chcete zmenšit / zvětšit spacing unvitř "table", definovaný přes "cellpadding" attribute, aplikujte inline style "padding" na "td" element.
 + Neaplikujte spacing na žadný jiný element než "table"(cellpadding) a td(style="padding: ;")
-    - tzn. žádný padding na "span", "a", "img", "i", "strong", jen "table" a "td"!
+	- tzn. žádný padding na "span", "a", "img", "i", "strong", jen "table" a "td"!
 
 ```html
 
-    <!-- 10px na všech stranách uvnitř každého <td> elementu -->
-    <table cellpadding="10">
+	<!-- 10px na všech stranách uvnitř každého <td> elementu -->
+	<table cellpadding="10">
 
-        <tr>
-            <!-- zmenší spacing top na 5px, ostaní zůstávají na 10px. -->
-            <td style="padding-top: 5px">
-                <span>Tento text je o 5px výše než je definovaný cellpadding, v tomto případě je jen 5px. "tr" elementy pod ním se také posunou o 5px výše.</span>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>Tento text je 20px pod "span" tagy v prní "tr". 10px + 10px. Ale posunutý o 5px výše, protože "td" v první "tr" má definovaný "padding-top: 5px;"</span>
-            </td>
-        </tr>
-    </table>
+		<tr>
+			<!-- zmenší spacing top na 5px, ostaní zůstávají na 10px. -->
+			<td style="padding-top: 5px">
+				<span>Tento text je o 5px výše než je definovaný cellpadding, v tomto případě je jen 5px. "tr" elementy pod ním se také posunou o 5px výše.</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span>Tento text je 20px pod "span" tagy v prní "tr". 10px + 10px. Ale posunutý o 5px výše, protože "td" v první "tr" má definovaný "padding-top: 5px;"</span>
+			</td>
+		</tr>
+	</table>
 ```
 
 ----
@@ -138,17 +138,17 @@
 
 ```html
 
-    <tr>
-        <td align="center" valign="top">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
-                <tr>
+	<tr>
+		<td align="center" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+				<tr>
 
-                    <!-- ZDE DEFINUJETE ŠÍŘKU A BARVU LINKY -->
-                    <td height="3" style="font-size:1px; line-height:1px;" bgcolor="#333333">&nbsp;</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
+					<!-- ZDE DEFINUJETE ŠÍŘKU A BARVU LINKY -->
+					<td height="3" style="font-size:1px; line-height:1px;" bgcolor="#333333">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 ```
 
 ----
@@ -158,10 +158,10 @@
 
 ```html
 
-    <!-- USPOŘÁDÁ TEXT UPROSTŘED A ON TOP OF THE TD ELEMENT -->
-    <td align="center" valign="top">
-        <span>Some text</span>
-    </td>
+	<!-- USPOŘÁDÁ TEXT UPROSTŘED A ON TOP OF THE TD ELEMENT -->
+	<td align="center" valign="top">
+		<span>Some text</span>
+	</td>
 ```
 
 + "img" element je také block level element ale často bývá wrapnutý v "a" tagu, který block level elementem není. Proto s ním lze také manipulovat přes "td" attributy(align, valign).
@@ -174,8 +174,8 @@
 
 ```html
 
-    <!-- TAKTO BY MĚL VYPADAT STYLING KAŽDÉHO <img> ELEMENTU PODLE MAILCHIMPU -->
-    <img width="240" style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;" src="http://lorempicsum.com/nemo/240/140/6" alt="article one image">
+	<!-- TAKTO BY MĚL VYPADAT STYLING KAŽDÉHO <img> ELEMENTU PODLE MAILCHIMPU -->
+	<img width="240" style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;" src="http://lorempicsum.com/nemo/240/140/6" alt="article one image">
 ```
 
 ----
@@ -198,82 +198,82 @@
 
 ```html
 
-    <!DOCTYPE html>
-    <html lang="cs">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Euro Newsletter</title>
-        <style type="text/css">
+	<!DOCTYPE html>
+	<html lang="cs">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Euro Newsletter</title>
+		<style type="text/css">
 
-            /* FORCE OUTLOOK TO PROVIDE A "VIEW IN BROWSER" BUTTON. */
-            #outlook a {
-                padding: 0;
-            }
+			/* FORCE OUTLOOK TO PROVIDE A "VIEW IN BROWSER" BUTTON. */
+			#outlook a {
+				padding: 0;
+			}
 
-            /* FORCE HOTMAIL TO DISPLAY EMAILS AT FULL WIDTH */
-            .ReadMsgBody {
-                width: 100%;
-            }
+			/* FORCE HOTMAIL TO DISPLAY EMAILS AT FULL WIDTH */
+			.ReadMsgBody {
+				width: 100%;
+			}
 
-            .ExternalClass {
-                width: 100%;
-            }
+			.ExternalClass {
+				width: 100%;
+			}
 
-            /* YAHOO OVERRIDE */
-            a .yshortcuts {
-                color: #336699;
-                font-weight: normal;
-                text-decoration: underline;
-            }
+			/* YAHOO OVERRIDE */
+			a .yshortcuts {
+				color: #336699;
+				font-weight: normal;
+				text-decoration: underline;
+			}
 
-        </style>
-        <meta name="description" content="email-template">
-    </head>
-    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="margin:0; padding:0; width: 100% !important;">
-        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="height:100% !important; margin:0; padding:0; width:100% !important; border-collapse: collapse;">
-            <tr>
+		</style>
+		<meta name="description" content="email-template">
+	</head>
+	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="margin:0; padding:0; width: 100% !important;">
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="height:100% !important; margin:0; padding:0; width:100% !important; border-collapse: collapse;">
+			<tr>
 
-                <!-- USE align="center" ATTRIBUTE TO CENTER THE EMAIL, DON'T USE style="margin: 0 auto;" -->
-                <td align="center" valign="top">
+				<!-- USE align="center" ATTRIBUTE TO CENTER THE EMAIL, DON'T USE style="margin: 0 auto;" -->
+				<td align="center" valign="top">
 
-                    <!-- THIS IS WHERE YOU SET EMAIL WIDTH -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+					<!-- THIS IS WHERE YOU SET EMAIL WIDTH -->
+					<table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
 
-                        <!-- EMAIL HEADER ROW -->
-                        <tr>
-                            <td align="center" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
-                                    <!-- EMAIL HEADER -->
-                                </table>
-                            </td>
-                        </tr>
+						<!-- EMAIL HEADER ROW -->
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+									<!-- EMAIL HEADER -->
+								</table>
+							</td>
+						</tr>
 
-                        <!-- EMAIL CONTENT ROW -->
-                        <tr>
-                            <td align="center" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
-                                    <!-- EMAIL CONTENT -->
-                                </table>
-                            </td>
-                        </tr>
+						<!-- EMAIL CONTENT ROW -->
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+									<!-- EMAIL CONTENT -->
+								</table>
+							</td>
+						</tr>
 
-                        <!-- EMAIL FOOTER ROW -->
-                        <tr>
-                            <td align="center" valign="top">
-                                <table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
-                                    <!-- EMAIL FOOTER -->
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </body>
-    </html>
+						<!-- EMAIL FOOTER ROW -->
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="800" style="border-collapse: collapse;">
+									<!-- EMAIL FOOTER -->
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+	</html>
 ```
 
 ----
